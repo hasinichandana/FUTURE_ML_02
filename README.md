@@ -42,7 +42,14 @@ The system helps businesses automate support workflows, reduce manual ticket sor
 
 ## Project Structure
 
+## Project Structure
+
+```text id="o6q2vy"
 support-ticket-classification/
+│
+├── app.py
+├── requirements.txt
+├── README.md
 │
 ├── data/
 │   └── tickets.csv
@@ -59,8 +66,28 @@ support-ticket-classification/
 │   ├── train_model.py
 │   └── predict.py
 │
-├── requirements.txt
-└── README.md
+└── venv/
+```
+
+### Folder & File Description
+
+| File / Folder                      | Description                                  |
+| ---------------------------------- | -------------------------------------------- |
+| `app.py`                           | Streamlit web application                    |
+| `requirements.txt`                 | Project dependencies                         |
+| `README.md`                        | Project documentation                        |
+| `data/tickets.csv`                 | Customer support ticket dataset              |
+| `models/ticket_classifier.pkl`     | Trained ML model                             |
+| `models/tfidf_vectorizer.pkl`      | Saved TF-IDF vectorizer                      |
+| `screenshots/confusion_matrix.png` | Model evaluation screenshot                  |
+| `src/preprocess.py`                | Text preprocessing and cleaning              |
+| `src/train_model.py`               | Model training and evaluation                |
+| `src/predict.py`                   | Ticket prediction and automated responses    |
+| `venv/`                            | Virtual environment (not uploaded to GitHub) |
+
+```
+```
+
 
 ---
 
